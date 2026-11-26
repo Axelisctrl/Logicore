@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>LOGICORE</title>
+<link rel="stylesheet" href="/style.css"></head><body>
+<div id="side"><div class="brand">LOGICORE</div><div class="tag">Converse naturally. Verify intelligently.</div>
+<button class="new" id="nw">New conversation</button><div id="list"></div><button class="set" id="ext">Verify another AI’s answer</button></div>
+<div id="main"><div id="top"><button id="mb" aria-label="Conversations">Menu</button><b>LOGICORE</b></div><div id="msgs"></div>
+<div id="bar"><div id="row"><textarea id="in" placeholder="Message LOGICORE. Ask it to verify any answer when you want a check."></textarea><button id="send">Send</button></div></div></div>
+<div id="rep"><div id="repin"></div></div>
+<dialog id="xd"><h3 style="margin-top:0">Verify another AI’s answer</h3>
+<label>Original question</label><textarea id="xq" rows="3"></textarea>
+<label>Which AI produced the answer?</label><select id="xs"><option>ChatGPT</option><option>DeepSeek</option><option>Claude</option><option>Gemini</option><option>Other AI</option></select>
+<label>The AI’s answer</label><textarea id="xa" rows="7"></textarea>
+<div class="err" id="xe"></div><div class="a"><button id="xc">Cancel</button><button class="p" id="xv">Verify</button></div></dialog>
+<script src="/app.js"></script></body></html>
